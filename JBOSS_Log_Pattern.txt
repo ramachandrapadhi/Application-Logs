@@ -1,0 +1,25 @@
+JBOSS Log Pattern	
+https://docs.redhat.com/en/documentation/red_hat_jboss_enterprise_application_platform/7.0/html/configuration_guide/logging_with_jboss_eap#log_formatters	
+Symbol	Description
+%c	The category of the logging event.
+%p	The level of the log entry (INFO, DEBUG, etc.).
+%P	The localized level of the log entry.
+%d	The current date/time (yyyy-MM-dd HH:mm:ss,SSS format).
+%r	The relative time (milliseconds since the log was initialized).
+%z	The time zone, which must be specified before the date (%d). For example, %z{GMT}%d{HH:mm:ss,SSS}.
+%k	A log resource key (used for localization of log messages).
+%m	The log message (including exception trace).
+%s	The simple log message (no exception trace).
+%e	The exception stack trace (no extended module information).
+%E	The exception stack trace (with extended module information).
+%t	The name of the current thread.
+%n	A newline character.
+%C	The class of the code calling the log method (slow).
+%F	The filename of the class calling the log method (slow).
+%l	The source location of the code calling the log method (slow).
+%L	The line number of the code calling the log method (slow).
+%M	The method of the code calling the log method (slow).
+%x	The Nested Diagnostic Context.
+%X	The Message Diagnostic Context.
+%%	A literal percent (%) character (escaping).
+	
